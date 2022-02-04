@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TIC TAC TOE Jeffer Fonseca</title>
+  </head>
+  <body>
+    <header>
+      <h1 align="center">TIC TAC TOE</h1>
+    </header>
+    <section>
+      <div align="center">
+        <button class="btn" id="1" onClick="cambiarTurno('c1',this, 0, 0);"></button>
+        <button class="btn" id="2" onClick="cambiarTurno('c2',this, 0, 1);"></button>
+        <button class="btn" id="3" onClick="cambiarTurno('c3',this, 0, 2);"></button>
+        <br />
+        <button class="btn" id="4" onClick="cambiarTurno('c4',this, 1, 0);"></button>
+        <button class="btn" id="5" onClick="cambiarTurno('c5',this, 1, 1);"></button>
+        <button class="btn" id="6" onClick="cambiarTurno('c6',this, 1, 2);"></button>
+        <br />
+        <button class="btn" id="7" onClick="cambiarTurno('c7',this, 2, 0);"></button>
+        <button class="btn" id="8" onClick="cambiarTurno('c8',this, 2, 1);"></button>
+        <button class="btn" id="9" onClick="cambiarTurno('c9',this, 2, 2);"></button>
+        <br />
+        <br />
+        <button id="reset" onClick="reset();">RESET</button>
+        <br />
+        <br />
+        <h1 id="winner"></h1>
+      </div>
+    </section>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>
